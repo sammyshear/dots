@@ -1,0 +1,27 @@
+import = ["/home/sammyshear/.config/alacritty/catppuccin/catppuccin-mocha.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font.bold]
+family = "FiraCode Nerd Font Mono"
+style = "Bold"
+
+[font.italic]
+family = "FiraCode Nerd Font Mono"
+style = "Italic"
+
+[font.normal]
+family = "FiraCode Nerd Font Mono"
+style = "Regular"
+
+[shell]
+args = ["-l", "-c", "tmux attach -t $(sess=$(tmux ls -F '#{session_name}|#{?session_attached,attached,not attached}' 2> /dev/null | grep 'not attached$' | tail -n 1 | cut -d '|' -f1) 2> /dev/null; echo ${sess:-fakesession}) || tmux"]
+program = "/bin/zsh"
+
+[window]
+dynamic_padding = true
+
+[window.padding]
+x = 10
+y = 5
