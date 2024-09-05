@@ -1,0 +1,20 @@
+- defaults:
+    link:
+      create: true
+      relink: true
+
+- clean: ["~"]
+- clean:
+    ~/.config:
+      recursive: true
+
+- link:
+    ~/.config/:
+      glob: true
+      path: config/*
+    ~/.zshrc:
+      path: zshrc
+    ~/.zprofile:
+      path: zprofile
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]

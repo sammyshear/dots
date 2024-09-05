@@ -1,6 +1,7 @@
-[submodule "dotsync"]
-	path = dotsync
-	url = git@github.com:dotphiles/dotsync.git
-[submodule "alacritty/catppuccin"]
-	path = alacritty/catppuccin
+[submodule "config/alacritty/catppuccin"]
+	path = config/alacritty/catppuccin
 	url = https://github.com/catppuccin/alacritty.git
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+	ignore = dirty
