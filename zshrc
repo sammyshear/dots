@@ -107,6 +107,22 @@ autoload -U compinit; compinit
 export PATH="${HOME}/.cargo/bin":$PATH
 export PATH="${HOME}/go/bin":$PATH
 
+
+
+# fnm
+FNM_PATH="/home/sammyshear/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/sammyshear/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+
+# bun completions
+[ -s "/home/sammyshear/.bun/_bun" ] && source "/home/sammyshear/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
