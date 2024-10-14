@@ -133,3 +133,11 @@ eval "$(zoxide init zsh)"
 alias cd="z"
 alias cdi="zi"
 nerdfetch
+
+# pnpm
+export PNPM_HOME="/home/sammyshear/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
