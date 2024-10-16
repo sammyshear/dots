@@ -3,3 +3,7 @@
 -- Add any additional options here
 vim.filetype.add({ extension = { templ = "templ" } })
 vim.filetype.add({ extension = { pgn = "pgn" } })
+
+vim.api.nvim_create_user_command("OpenNotebook", function()
+  vim.cmd("e " .. vim.fn.expand("~") .. "/Documents/notes/Notebook.md")
+end, {})
