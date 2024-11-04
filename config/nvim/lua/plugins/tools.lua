@@ -58,6 +58,27 @@ return {
     end,
   },
   {
+    "arminveres/md-pdf.nvim",
+    branch = "main", -- you can assume that main is somewhat stable until releases will be made
+    lazy = true,
+    keys = {
+      {
+        "<leader>o,",
+        function()
+          require("md-pdf").convert_md_to_pdf()
+        end,
+        desc = "Markdown preview",
+      },
+    },
+    opts = {
+      toc = false,
+      pandoc_user_args = {
+        "-H" .. vim.fn.expand("~") .. "/Documents/notes/pandoc-header.tex",
+        "--pdf-engine=lualatex",
+      },
+    },
+  },
+  {
     "epwalsh/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
