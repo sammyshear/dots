@@ -52,6 +52,19 @@ return {
     end,
   },
   {
+    "mistweaverco/kulala.nvim",
+    keys = {
+      {
+        "<leader>c,",
+        function()
+          require("kulala").run()
+        end,
+        desc = "Run request",
+      },
+    },
+    opts = {},
+  },
+  {
     "supermaven-inc/supermaven-nvim",
     config = function()
       require("supermaven-nvim").setup({})
@@ -73,7 +86,6 @@ return {
     opts = {
       toc = false,
       pandoc_user_args = {
-        "-H" .. vim.fn.expand("~") .. "/Documents/notes/pandoc-header.tex",
         "--pdf-engine=lualatex",
       },
     },
