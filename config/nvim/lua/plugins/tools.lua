@@ -86,6 +86,7 @@ return {
     opts = {
       toc = false,
       pandoc_user_args = {
+        "-H" .. vim.fn.expand("~") .. "/Documents/notes/pandoc-header.tex",
         "--pdf-engine=lualatex",
       },
     },
