@@ -123,6 +123,17 @@ fi
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.luarocks/bin/:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/sammyshear/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+source <(plz --completion_script)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -135,10 +146,3 @@ alias cd="z"
 alias cdi="zi"
 nerdfetch
 
-# pnpm
-export PNPM_HOME="/home/sammyshear/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
