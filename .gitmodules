@@ -5,3 +5,6 @@
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
 	ignore = dirty
+[submodule "config/ags"]
+	path = config/ags
+	url = https://github.com/Jas-SinghFSU/HyprPanel.git
