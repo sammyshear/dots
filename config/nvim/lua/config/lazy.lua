@@ -23,6 +23,9 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
+  rocks = {
+    hererocks = true, -- recommended if you do not have global installation of Lua 5.1.
+  },
   install = { colorscheme = {} },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
@@ -39,5 +42,8 @@ require("lazy").setup({
         "zipPlugin",
       },
     },
+  },
+  dev = {
+    path = "~/Coding",
   },
 })

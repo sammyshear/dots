@@ -1,6 +1,17 @@
 return {
   { "wakatime/vim-wakatime", lazy = false },
   {
+    "sammyshear/drash.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    name = "drash.nvim",
+    lazy = false,
+    opts = {},
+    dev = true,
+  },
+  {
     "3rd/image.nvim",
     dependencies = {
       {
