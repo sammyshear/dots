@@ -63,25 +63,6 @@ return {
     end,
   },
   {
-    "mistweaverco/kulala.nvim",
-    keys = {
-      {
-        "<leader>c,",
-        function()
-          require("kulala").run()
-        end,
-        desc = "Run request",
-      },
-    },
-    opts = {},
-  },
-  {
-    "supermaven-inc/supermaven-nvim",
-    config = function()
-      require("supermaven-nvim").setup({})
-    end,
-  },
-  {
     "arminveres/md-pdf.nvim",
     branch = "main", -- you can assume that main is somewhat stable until releases will be made
     lazy = true,
