@@ -7,9 +7,9 @@ return {
       "nvim-telescope/telescope.nvim",
     },
     name = "drash.nvim",
-    lazy = false,
-    opts = {},
-    dev = true,
+    opts = {
+      text_language = "hebrew",
+    },
   },
   {
     "3rd/image.nvim",
@@ -150,5 +150,13 @@ return {
     build = "make",
     dependencies = "nvim-lua/plenary.nvim",
     opts = {},
+  },
+  {
+    "stevearc/conform.nvim",
+    opts = {
+      formatters_by_ft = {
+        tex = { "llf" },
+      },
+    },
   },
 }
