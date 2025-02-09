@@ -16,5 +16,8 @@
       path: zshrc
     ~/.zprofile:
       path: zprofile
+    ~/Pictures/:
+      glob: true
+      path: Pictures/*
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
