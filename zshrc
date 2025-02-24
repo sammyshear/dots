@@ -107,7 +107,8 @@ autoload -U compinit; compinit
 export PATH="${HOME}/.cargo/bin":$PATH
 export PATH="${HOME}/go/bin":$PATH
 
-
+export FLYCTL_INSTALL="/home/sammyshear/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 # fnm
 FNM_PATH="/home/sammyshear/.local/share/fnm"
