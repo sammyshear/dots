@@ -12,6 +12,8 @@
     ~/.config/:
       glob: true
       path: config/*
+    ~/.wakatime.cfg:
+      path: wakatime.cfg
     ~/.zshrc:
       path: zshrc
     ~/.zprofile:
