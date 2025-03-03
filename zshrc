@@ -125,6 +125,7 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.luarocks/bin/:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/momw-tools-pack-linux/:$PATH"
 
 # pnpm
 export PNPM_HOME="/home/sammyshear/.local/share/pnpm"
