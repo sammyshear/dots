@@ -135,6 +135,25 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/sammyshear/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/sammyshear/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sammyshear/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/sammyshear/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 source <(plz --completion_script)
 
 HISTFILE=~/.zsh_history
@@ -144,7 +163,7 @@ setopt SHARE_HISTORY
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
+eval "$(pyenv init - zsh)"
 alias cd="z"
 alias cdi="zi"
 nerdfetch
-

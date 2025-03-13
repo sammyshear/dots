@@ -9,9 +9,3 @@ vim.filetype.add({
     ["http"] = "http",
   },
 })
-
-vim.api.nvim_create_user_command("OpenNotebook", function()
-  vim.cmd("cd " .. vim.fn.expand("~") .. "/Documents/notes")
-  vim.cmd("e " .. vim.fn.expand("~") .. "/Documents/notes/Notebook.md")
-  vim.cmd("RsyncDown")
-end, {})
