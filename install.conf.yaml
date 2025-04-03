@@ -18,6 +18,8 @@
       path: zshrc
     ~/.zprofile:
       path: zprofile
+    ~/markdownlint.yaml:
+      path: markdownlint.yaml
     ~/Pictures/:
       glob: true
       path: Pictures/*

@@ -41,6 +41,18 @@ return {
     },
   },
   {
+    {
+      "mfussenegger/nvim-lint",
+      opts = {
+        linters = {
+          ["markdownlint-cli2"] = {
+            args = { "--config", vim.fn.expand("~") .. "/markdownlint.yaml", "--" },
+          },
+        },
+      },
+    },
+  },
+  {
     "mpas/marp-nvim",
     cmd = "MarpStart",
     config = function()
