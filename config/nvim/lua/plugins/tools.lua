@@ -1,15 +1,14 @@
 return {
   { "wakatime/vim-wakatime", lazy = false },
   {
-    "sammyshear/drash.nvim",
+    "sammyshear/sefaria.nvim",
+    name = "sefaria.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
+      "folke/snacks.nvim",
     },
-    name = "drash.nvim",
-    opts = {
-      text_language = "english",
-    },
+    opts = {},
+    version = "*",
   },
   {
     "mikavilpas/yazi.nvim",
