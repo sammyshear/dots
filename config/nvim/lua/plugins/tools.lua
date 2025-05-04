@@ -136,7 +136,7 @@ return {
     },
   },
   {
-    "epwalsh/obsidian.nvim",
+    "obsidian-nvim/obsidian.nvim",
     version = "*", -- recommended, use latest release instead of latest commit
     lazy = true,
     event = {
@@ -196,12 +196,6 @@ return {
         },
       },
     },
-  },
-  {
-    "OscarCreator/rsync.nvim",
-    build = "make",
-    dependencies = "nvim-lua/plenary.nvim",
-    opts = {},
   },
   {
     "stevearc/conform.nvim",
