@@ -11,6 +11,18 @@ return {
     version = "*",
   },
   {
+    "nvim-orgmode/orgmode",
+    event = "VeryLazy",
+    ft = { "org" },
+    config = function()
+      -- Setup orgmode
+      require("orgmode").setup({
+        org_agenda_files = "~/orgfiles/**/*",
+        org_default_notes_file = "~/orgfiles/refile.org",
+      })
+    end,
+  },
+  {
     "mikavilpas/yazi.nvim",
     event = "VeryLazy",
     keys = {
@@ -201,7 +213,6 @@ return {
     "stevearc/conform.nvim",
     opts = {
       formatters_by_ft = {
-        tex = { "llf" },
         templ = { "templ" },
       },
     },

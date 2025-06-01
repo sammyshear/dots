@@ -127,6 +127,13 @@ export PATH="$HOME/.luarocks/bin/:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/momw-tools-pack-linux/:$PATH"
 
+
+# go speechsdk
+#export SPEECHSDK_ROOT="$HOME/speechsdk"
+#export CGO_CFLAGS="-I$SPEECHSDK_ROOT/include/c_api"
+#export CGO_LDFLAGS="-L$SPEECHSDK_ROOT/lib/x64 -lMicrosoft.CognitiveServices.Speech.core"
+#export LD_LIBRARY_PATH="$SPEECHSDK_ROOT/lib/x64:$LD_LIBRARY_PATH"
+
 # pnpm
 export PNPM_HOME="/home/sammyshear/.local/share/pnpm"
 case ":$PATH:" in
@@ -154,7 +161,15 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+any-nix-shell zsh --info-right | source /dev/stdin
+
 source <(plz --completion_script)
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/home/sammyshear/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/sammyshear/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/home/sammyshear/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/home/sammyshear/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -167,3 +182,4 @@ eval "$(pyenv init - zsh)"
 alias cd="z"
 alias cdi="zi"
 nerdfetch
+

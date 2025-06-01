@@ -45,6 +45,14 @@ symbol = " "
 #[directory]
 #read_only = " "
 
+
+[nix_shell]
+disabled = false
+impure_msg = '[impure shell](bold red)'
+pure_msg = '[pure shell](bold green)'
+unknown_msg = '[unknown shell](bold yellow)'
+format = 'via [☃️ $state( \($name\))](bold blue) '
+
 [docker_context]
 symbol = " "
 format = "via [$symbol$context]($style) "
@@ -80,9 +88,6 @@ symbol = " "
 
 [nim]
 symbol = " "
-
-[nix_shell]
-symbol = " "
 
 [package]
 symbol = " "
