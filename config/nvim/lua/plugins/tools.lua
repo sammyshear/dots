@@ -71,6 +71,9 @@ return {
     end,
   },
   {
+    "lambdalisue/vim-suda",
+  },
+  {
     "3rd/image.nvim",
     dependencies = {
       {
