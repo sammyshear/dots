@@ -8,3 +8,6 @@
 [submodule "config/ags"]
 	path = config/ags
 	url = https://github.com/Jas-SinghFSU/HyprPanel.git
+[submodule "config/tmux/tpm"]
+	path = config/tmux/tpm
+	url = https://github.com/tmux-plugins/tpm
