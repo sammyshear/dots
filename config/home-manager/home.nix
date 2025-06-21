@@ -5,6 +5,7 @@
   # manage.
   home.username = "sammyshear";
   home.homeDirectory = "/home/sammyshear";
+  targets.genericLinux.enable = true;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -46,8 +47,14 @@
 
     ".zshrc".source = dots/zshrc;
     ".zprofile".source = dots/zprofile;
-    ".config".source = dots/config;
-    "Pictures".source = dots/Pictures;
+    ".config" = {
+      source = dots/config;
+      recursive = true;
+    };
+    "Pictures" = {
+      source = dots/Pictures;
+      recursive = true;
+    };
     "markdownlint.yaml".source = dots/markdownlint.yaml;
 
     # # You can also set the file content immediately.
