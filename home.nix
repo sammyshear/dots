@@ -5,7 +5,6 @@
   # manage.
   home.username = "sammyshear";
   home.homeDirectory = "/home/sammyshear";
-  targets.genericLinux.enable = true;
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -45,17 +44,17 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
-    ".zshrc".source = dots/zshrc;
-    ".zprofile".source = dots/zprofile;
+    ".zshrc".source = ./zshrc;
+    ".zprofile".source = ./zprofile;
     ".config" = {
-      source = dots/config;
+      source = ./config;
       recursive = true;
     };
     "Pictures" = {
-      source = dots/Pictures;
+      source = ./Pictures;
       recursive = true;
     };
-    "markdownlint.yaml".source = dots/markdownlint.yaml;
+    "markdownlint.yaml".source = ./markdownlint.yaml;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
