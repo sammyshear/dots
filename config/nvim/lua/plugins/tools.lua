@@ -19,8 +19,8 @@ return {
     event = "VeryLazy",
     config = function()
       require("orgmode").setup({
-        org_agenda_files = "~/orgfiles/**/*",
-        org_default_notes_file = "~/orgfiles/refile.org",
+        org_agenda_files = "~/orgmode/**/*",
+        org_default_notes_file = "~/orgmode/refile.org",
       })
       require("org-bullets").setup()
       require("blink.cmp").setup({
