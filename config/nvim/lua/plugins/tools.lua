@@ -14,7 +14,7 @@ return {
     "nvim-orgmode/orgmode",
     dependencies = {
       "nvim-orgmode/org-bullets.nvim",
-      "Saghen/blink.cmp",
+      "saghen/blink.cmp",
     },
     event = "VeryLazy",
     config = function()
