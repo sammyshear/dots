@@ -1,0 +1,16 @@
+{
+  "bar.customModules.updates.pollingInterval": 1440000,
+  "menus.dashboard.powermenu.avatar.name": "Sammy Shear",
+  "menus.dashboard.powermenu.avatar.image": "/home/sammyshear/Pictures/catppuccin.png",
+  "menus.dashboard.shortcuts.left.shortcut1.command": "firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.tooltip": "Firefox",
+  "menus.dashboard.shortcuts.left.shortcut1.icon": "󰈹",
+  "bar.workspaces.show_icons": false,
+  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.showWsIcons": false,
+  "bar.workspaces.showApplicationIcons": false,
+  "bar.workspaces.applicationIconOncePerWorkspace": false,
+  "theme.bar.buttons.workspaces.smartHighlight": true,
+  "theme.bar.buttons.workspaces.enableBorder": false,
+  "bar.workspaces.ignored": "-98"
+}
