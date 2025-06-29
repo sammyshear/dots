@@ -1,11 +1,11 @@
 { pkgs, ... }:
 
 {
+  imports = [ ./nix/hyprpanel.nix ];
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "sammyshear";
   home.homeDirectory = "/home/sammyshear";
-
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -17,7 +17,7 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [ pkgs.tmux pkgs.zsh ];
+  home.packages = [ pkgs.tmux pkgs.zsh pkgs.hyprpanel ];
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -72,4 +72,5 @@
     userName = "Sammy Shear";
     userEmail = "sammyshear1@gmail.com";
   };
+
 }
