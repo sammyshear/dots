@@ -96,8 +96,12 @@ in {
 
       cursor = {
         no_hardware_cursors = true;
-        default_monitor = "eDP-2";
+        default_monitor = "eDP-1";
       };
+
+      monitor = [
+        ",prefered,auto,1" # default
+      ];
 
       general = {
         resize_on_border = true;

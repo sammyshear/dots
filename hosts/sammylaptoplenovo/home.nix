@@ -9,7 +9,7 @@
 
     # Programs
     ../../home/programs/kitty
-    ../../home/programs/nvf
+    ../../home/programs/neovim
     ../../home/programs/shell
     ../../home/programs/fetch
     ../../home/programs/git
@@ -78,6 +78,7 @@
       pfetch
       btop
       fastfetch
+      lua51Packages.luarocks
 
       # Just cool
       peaclock
