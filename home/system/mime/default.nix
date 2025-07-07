@@ -2,7 +2,7 @@
 with lib;
 let
   defaultApps = {
-    browser = [ "brave.desktop" ];
+    browser = [ "firefox.desktop" ];
     text = [ "org.gnome.TextEditor.desktop" ];
     image = [ "imv-dir.desktop" ];
     audio = [ "mpv.desktop" ];

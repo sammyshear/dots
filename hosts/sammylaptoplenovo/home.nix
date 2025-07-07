@@ -56,6 +56,7 @@
       gnome-clocks
       gnome-text-editor mpv # Video player
       figma-linux
+      firefox
 
       # Dev
       go
