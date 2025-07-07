@@ -12,6 +12,7 @@
     ../../nixos/utils.nix
     ../../nixos/tailscale.nix
     ../../nixos/hyprland.nix
+    ../../home/system/steam
 
     # You should let those lines as is
     ./hardware-configuration.nix

@@ -7,7 +7,7 @@
       "$mod,K, exec,  uwsm app -- ${pkgs.bitwarden}/bin/bitwarden" # Bitwarden
       "$mod,L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
       "$mod,X, exec, powermenu" # Powermenu
-      "$mod,SPACE, exec, menu" # Launcher
+      "$mod,D, exec, menu" # Launcher
       "$mod,C, exec, quickmenu" # Quickmenu
       "$shiftMod,SPACE, exec, hyprfocus-toggle" # Toggle HyprFocus
       # "$mod,P, exec,  uwsm app -- ${pkgs.planify}/bin/io.github.alainm23.planify" # Planify

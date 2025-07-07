@@ -15,10 +15,8 @@
     ../../home/programs/git
     ../../home/programs/git/signing.nix
     ../../home/programs/spicetify
-    ../../home/programs/nextcloud
     ../../home/programs/thunar
     ../../home/programs/lazygit
-    ../../home/programs/zen
     ../../home/programs/duckduckgo-colorscheme
     ../../home/programs/discord
     ../../home/programs/tailscale
@@ -56,8 +54,7 @@
       curtail # Compress images
       resources
       gnome-clocks
-      gnome-text-editor
-      mpv # Video player
+      gnome-text-editor mpv # Video player
       figma-linux
 
       # Dev
