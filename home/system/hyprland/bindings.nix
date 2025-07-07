@@ -3,7 +3,7 @@
     bind = [
       "$mod,RETURN, exec, uwsm app -- ${pkgs.kitty}/bin/kitty" # Kitty
       "$mod,E, exec,  uwsm app -- ${pkgs.xfce.thunar}/bin/thunar" # Thunar
-      "$mod,W, exec,  uwsm app -- brave;" # Browser
+      "$mod,W, exec,  uwsm app -- firefox;" # Browser
       "$mod,K, exec,  uwsm app -- ${pkgs.bitwarden}/bin/bitwarden" # Bitwarden
       "$mod,L, exec,  uwsm app -- ${pkgs.hyprlock}/bin/hyprlock" # Lock
       "$mod,X, exec, powermenu" # Powermenu
