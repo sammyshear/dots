@@ -20,6 +20,7 @@
     ../../home/programs/duckduckgo-colorscheme
     ../../home/programs/discord
     ../../home/programs/anyrun
+    ../../home/programs/thunderbird
 
     # Scripts
     ../../home/scripts # All scripts
