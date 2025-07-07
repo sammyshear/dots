@@ -15,7 +15,7 @@
       blur = true;
       border-size = 3;
       animation-speed = "fast"; # "fast" | "medium" | "slow"
-      fetch = "none"; # "nerdfetch" | "neofetch" | "pfetch" | "none"
+      fetch = "nerdfetch"; # "nerdfetch" | "neofetch" | "pfetch" | "none"
       textColorOnWallpaper =
         config.lib.stylix.colors.base05; # Color of the text displayed on the wallpaper (Lockscreen, display manager, ...)
 
@@ -36,8 +36,8 @@
     # Mocha
     # See https://tinted-theming.github.io/tinted-gallery/ for more schemes
     base16Scheme = {
-      base00 = "0F0F15"; # Default Background
-      base01 = "15151A"; # Lighter Background (Used for status bars, line number and folding marks)
+      base00 = "1e1e2e"; # Default Background
+      base01 = "181825"; # Lighter Background (Used for status bars, line number and folding marks)
       base02 = "313244"; # Selection Background
       base03 = "45475a"; # Comments, Invisibles, Line Highlighting
       base04 = "585b70"; # Dark Foreground (Used for status bars)
@@ -84,8 +84,8 @@
 
     polarity = "dark";
     image = pkgs.fetchurl {
-      url = "https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/master/cat-vibin.png";
-      sha256 = "sha256-Hg27Gp4JBrYIC5B1Uaz8QkUskwD3pBhgEwE1FW7VBYo=";
+      url = "https://raw.githubusercontent.com/orangci/walls-catppuccin-mocha/refs/heads/master/minimalist-black-hole.png";
+      sha256 = "sha256-UetLf/3ustmNAXTSoNjqAJKug+ZeMnyf2DMTr+h+eU4=";
     };
   };
 }
