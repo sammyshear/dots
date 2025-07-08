@@ -66,6 +66,7 @@
       just
       pnpm
       air
+      texlive.combined.scheme-full
 
       # Utils
       zip
@@ -73,6 +74,7 @@
       optipng
       jpegoptim
       pfetch
+      praat
       btop
       fastfetch
       lua51Packages.luarocks
