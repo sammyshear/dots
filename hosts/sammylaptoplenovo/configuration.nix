@@ -1,4 +1,4 @@
-{config, ...}: {
+{ config, ... }: {
   imports = [
     # Mostly system related configuration
     ../../nixos/audio.nix
@@ -13,6 +13,7 @@
     ../../nixos/tailscale.nix
     ../../nixos/hyprland.nix
     ../../home/system/steam
+    ../../nixos/xkb
 
     # You should let those lines as is
     ./hardware-configuration.nix

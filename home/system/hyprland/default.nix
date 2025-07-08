@@ -1,11 +1,6 @@
 # So best window tiling manager
-{
-  pkgs,
-  config,
-  inputs,
-  lib,
-  ...
-}: let
+{ pkgs, config, inputs, lib, ... }:
+let
   border-size = config.theme.border-size;
   gaps-in = config.theme.gaps-in;
   gaps-out = config.theme.gaps-out;
@@ -16,12 +11,8 @@
   keyboardLayout = config.var.keyboardLayout;
   background = "rgb(" + config.lib.stylix.colors.base00 + ")";
 in {
-  imports = [
-    ./animations.nix
-    ./bindings.nix
-    ./polkitagent.nix
-    ./hyprspace.nix
-  ];
+  imports =
+    [ ./animations.nix ./bindings.nix ./polkitagent.nix ./hyprspace.nix ];
 
   home.packages = with pkgs; [
     qt5.qtwayland
@@ -121,10 +112,7 @@ in {
           render_power = 3;
         };
         blur = {
-          enabled =
-            if blur
-            then "true"
-            else "false";
+          enabled = if blur then "true" else "false";
           size = 18;
         };
       };
@@ -135,7 +123,7 @@ in {
         mfact = 0.5;
       };
 
-      gestures = {workspace_swipe = true;};
+      gestures = { workspace_swipe = true; };
 
       misc = {
         vfr = true;
@@ -180,12 +168,12 @@ in {
         "size 640 400, class:^(.*jetbrains.*)$, title:^(splash)$"
       ];
 
-      layerrule = ["noanim, launcher" "noanim, ^ags-.*"];
+      layerrule = [ "noanim, launcher" "noanim, ^ags-.*" ];
 
       input = {
-        kb_layout = keyboardLayout;
+        kb_layout = "us,ipa,yi";
+        kb_options = "grp:win_space_toggle";
 
-        kb_options = "caps:escape";
         follow_mouse = 1;
         sensitivity = 0.5;
         repeat_delay = 300;

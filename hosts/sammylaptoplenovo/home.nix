@@ -1,8 +1,4 @@
-{
-  pkgs,
-  config,
-  ...
-}: {
+{ pkgs, config, ... }: {
   imports = [
     # Mostly user-specific configuration
     ./variables.nix
@@ -21,6 +17,7 @@
     ../../home/programs/discord
     ../../home/programs/anyrun
     ../../home/programs/thunderbird
+    ../../home/programs/obs
 
     # Scripts
     ../../home/scripts # All scripts
@@ -54,9 +51,11 @@
       curtail # Compress images
       resources
       gnome-clocks
-      gnome-text-editor mpv # Video player
+      gnome-text-editor
+      mpv # Video player
       figma-linux
       firefox
+      prismlauncher
 
       # Dev
       go
@@ -77,6 +76,7 @@
       btop
       fastfetch
       lua51Packages.luarocks
+      avidemux
 
       # Just cool
       peaclock
@@ -90,7 +90,7 @@
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
-    file.".face.icon" = {source = ./profile_picture.png;};
+    file.".face.icon" = { source = ./profile_picture.png; };
 
     # Don't touch this
     stateVersion = "25.05";

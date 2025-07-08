@@ -1,8 +1,4 @@
-{
-  config,
-  lib,
-  ...
-}: {
+{ config, lib, ... }: {
   imports = [
     # Choose your theme here:
     ../../themes/catppuccin.nix
@@ -11,9 +7,7 @@
   config.var = {
     hostname = "sammylaptoplenovo";
     username = "sammyshear";
-    configDirectory =
-      "/home/"
-      + config.var.username
+    configDirectory = "/home/" + config.var.username
       + "/.config/nixos"; # The path of the nixos configuration directory
 
     keyboardLayout = "us";
@@ -35,7 +29,7 @@
   options = {
     var = lib.mkOption {
       type = lib.types.attrs;
-      default = {};
+      default = { };
     };
   };
 }
