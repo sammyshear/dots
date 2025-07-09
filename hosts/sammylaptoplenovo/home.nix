@@ -67,6 +67,8 @@
       pnpm
       air
       texlive.combined.scheme-full
+      texlab
+      tex-fmt
 
       # Utils
       zip
