@@ -71,6 +71,8 @@
     enable = true;
     userName = "Sammy Shear";
     userEmail = "sammyshear1@gmail.com";
+    signing.key = "~/.ssh/signing";
+    signing.format = "ssh";
   };
 
 }

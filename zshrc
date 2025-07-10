@@ -161,9 +161,12 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-any-nix-shell zsh --info-right | source /dev/stdin
-
-source <(plz --completion_script)
+# fnm
+FNM_PATH="/home/sammyshear/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/sammyshear/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/home/sammyshear/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/home/sammyshear/Downloads/google-cloud-sdk/path.zsh.inc'; fi
