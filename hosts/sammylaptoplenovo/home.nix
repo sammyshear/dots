@@ -1,11 +1,16 @@
-{ pkgs, config, ... }: {
+{
+  pkgs,
+  config,
+  inputs,
+  ...
+}:
+{
   imports = [
     # Mostly user-specific configuration
     ./variables.nix
 
     # Programs
     ../../home/programs/kitty
-    ../../home/programs/neovim
     ../../home/programs/shell
     ../../home/programs/fetch
     ../../home/programs/git
@@ -18,6 +23,7 @@
     ../../home/programs/anyrun
     ../../home/programs/thunderbird
     ../../home/programs/obs
+    ../../home/programs/nixvim
 
     # Scripts
     ../../home/scripts # All scripts
@@ -56,6 +62,7 @@
       figma-linux
       firefox
       prismlauncher
+      libresplit
 
       # Dev
       go
@@ -94,7 +101,9 @@
     ];
 
     # Import my profile picture, used by the hyprpanel dashboard
-    file.".face.icon" = { source = ./profile_picture.png; };
+    file.".face.icon" = {
+      source = ./profile_picture.png;
+    };
 
     # Don't touch this
     stateVersion = "25.05";

@@ -144,6 +144,9 @@ in {
         # Bitwarden extension
         "float, title:^(.*Bitwarden Password Manager.*)$"
 
+        # libresplit
+        "float, title:^(Libresplit)$"
+
         # gnome calculator
         "float, class:^(org.gnome.Calculator)$"
         "size 360 490, class:^(org.gnome.Calculator)$"

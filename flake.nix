@@ -37,22 +37,24 @@
     search-nixos-api.url = "github:anotherhadi/search-nixos-api";
   };
 
-  outputs = inputs @ {nixpkgs, ...}: {
-    nixosConfigurations = {
-      sammylaptoplenovo =
-        # CHANGEME: This should match the 'hostname' in your variables.nix file
-        nixpkgs.lib.nixosSystem {
-          modules = [
-            {
-              nixpkgs.overlays = [inputs.hyprpanel.overlay];
-              _module.args = {inherit inputs;};
-            }
-            inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen3 # CHANGEME: check https://github.com/NixOS/nixos-hardware
-            inputs.home-manager.nixosModules.home-manager
-            inputs.stylix.nixosModules.stylix
-            ./hosts/sammylaptoplenovo/configuration.nix # CHANGEME: change the path to match your host folder
-          ];
-        };
+  outputs =
+    inputs@{ nixpkgs, ... }:
+    {
+      nixosConfigurations = {
+        sammylaptoplenovo =
+          # CHANGEME: This should match the 'hostname' in your variables.nix file
+          nixpkgs.lib.nixosSystem {
+            modules = [
+              {
+                nixpkgs.overlays = [ inputs.hyprpanel.overlay ];
+                _module.args = { inherit inputs; };
+              }
+              inputs.nixos-hardware.nixosModules.lenovo-thinkpad-t14-amd-gen3 # CHANGEME: check https://github.com/NixOS/nixos-hardware
+              inputs.home-manager.nixosModules.home-manager
+              inputs.stylix.nixosModules.stylix
+              ./hosts/sammylaptoplenovo/configuration.nix # CHANGEME: change the path to match your host folder
+            ];
+          };
+      };
     };
-  };
 }
