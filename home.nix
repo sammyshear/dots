@@ -73,6 +73,12 @@
     userEmail = "sammyshear1@gmail.com";
     signing.key = "~/.ssh/signing";
     signing.format = "ssh";
+    extraConfig = {
+      core = {
+        sshCommand = "ssh -i ~/.ssh/auth_key";
+      };
+      init.defaultBranch = "main";
+    };
   };
 
 }

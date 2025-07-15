@@ -182,7 +182,6 @@ setopt SHARE_HISTORY
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 eval "$(pyenv init - zsh)"
-eval "$(ssh-agent -s)"
 alias cd="z"
 alias cdi="zi"
 nerdfetch
