@@ -10,6 +10,7 @@ return {
     opts = {},
     version = "*",
   },
+  { "dopefishh/vim-praat" },
   {
     "nvim-orgmode/orgmode",
     dependencies = {
