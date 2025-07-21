@@ -71,7 +71,8 @@
     enable = true;
     userName = "Sammy Shear";
     userEmail = "sammyshear1@gmail.com";
-    signing.key = "~/.ssh/signing";
+    signing.key = "~/.ssh/signing.pub";
+    signing.signByDefault = true;
     signing.format = "ssh";
     extraConfig = {
       core = {
