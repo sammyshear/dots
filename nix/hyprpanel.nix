@@ -19,10 +19,6 @@
     # Default: false
     hyprland.enable = true;
 
-    # Fix the overwrite issue with HyprPanel.
-    # See below for more information.
-    # Default: false
-    overwrite.enable = true;
     settings = {
       # Import a theme from './themes/*.json'.
       # Default: ""

@@ -126,6 +126,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 export PATH="$HOME/.luarocks/bin/:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/momw-tools-pack-linux/:$PATH"
+export PATH="$HOME/.spicetify/:$PATH"
 
 
 # go speechsdk
@@ -148,14 +149,14 @@ export PYENV_ROOT="$HOME/.pyenv"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/sammyshear/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/sammyshear/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/sammyshear/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/sammyshear/anaconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/sammyshear/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/sammyshear/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/sammyshear/anaconda3/bin:$PATH"
+        export PATH="/home/sammyshear/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
