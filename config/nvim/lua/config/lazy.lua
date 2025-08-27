@@ -26,7 +26,7 @@ require("lazy").setup({
   rocks = {
     hererocks = true, -- recommended if you do not have global installation of Lua 5.1.
   },
-  install = { colorscheme = {} },
+  install = { colorscheme = { "catppuccin" } },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
     rtp = {
